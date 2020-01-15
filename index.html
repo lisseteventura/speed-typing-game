@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Speed Typing Game</title>
+  </head>
+  <body>
+    <!-- Word & Input -->
+    <div class="container">
+      <p class="lead">
+        Type The Given Word Within
+        <span id="seconds">5</span> Seconds:
+      </p>
+      <h2 id="current-word">hello</h2>
+      <input
+        type="text"
+        placeholder="Start typing..."
+        id="word-input"
+        autofocus
+      />
+      <h4 id="message"></h4>
+      <!-- Time & Score Columns -->
+      <h3>
+        Time Left:
+        <span id="time">0</span>
+      </h3>
+      <h3>
+        Score:
+        <span id="score">0</span>
+      </h3>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
