@@ -16,7 +16,7 @@ const words = [
   "orange",
   "thug",
   "vibes",
-  "statue",
+  "davonte sucks",
   "generate",
   "stubborn",
   "cocktail",
@@ -27,7 +27,7 @@ const words = [
   "hero",
   "javascript",
   "you",
-  "revolver",
+  "ant is a joke",
   "summer",
   "leggings",
   "investigate",
@@ -71,7 +71,8 @@ function startMatch() {
 //Match currentWord to wordInput
 function matchWords() {
   if (wordInput.value === currentWord.innerHTML) {
-    message.innerHTML = "Correct";
+    message.innerHTML = "Wow, it's Correct.";
+    message.style.color = "green";
     return true;
   } else {
     message.innerHTML = "";
@@ -102,7 +103,8 @@ function countdown() {
 
 function checkStatus() {
   if (!isPlaying && time === 0) {
-    message.innerHTML = "Game Over";
+    message.innerHTML = "GAME OVER, loser.";
+    message.style.color = "red";
     score = -1;
   }
 }
