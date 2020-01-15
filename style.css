@@ -7,3 +7,14 @@ body {
   justify-content: center;
   align-items: center;
 }
+
+.container {
+  background-color: white;
+  padding: 3rem;
+  border-radius: 0.5rem;
+  border: 2px solid transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
