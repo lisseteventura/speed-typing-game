@@ -14,9 +14,9 @@ const seconds = document.querySelector("#seconds");
 
 const words = [
   "orange",
-  "thug",
+  "recommend",
   "vibes",
-  "davonte sucks",
+  "disinterested",
   "generate",
   "stubborn",
   "cocktail",
@@ -27,14 +27,14 @@ const words = [
   "hero",
   "javascript",
   "you",
-  "ant is a joke",
+  "architect",
   "summer",
   "leggings",
   "investigate",
   "stalk",
   "symptom",
   "laughter",
-  "bigfive",
+  "cache",
   "master",
   "prejudice",
   "freighter"
@@ -71,7 +71,7 @@ function startMatch() {
 //Match currentWord to wordInput
 function matchWords() {
   if (wordInput.value === currentWord.innerHTML) {
-    message.innerHTML = "Wow, it's Correct.";
+    message.innerHTML = "Correct.";
     message.style.color = "green";
     return true;
   } else {
@@ -103,7 +103,7 @@ function countdown() {
 
 function checkStatus() {
   if (!isPlaying && time === 0) {
-    message.innerHTML = "GAME OVER, loser.";
+    message.innerHTML = "GAME OVER";
     message.style.color = "red";
     score = -1;
   }
